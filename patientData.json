@@ -1,0 +1,252 @@
+{
+    "p_eplTol": {
+        "alarms": {},
+        "description": "Excursion from p_epl required to trigger start of new breath if P < p_epl - p_eplTol",
+        "desired_value": 2.0,
+        "id": "p_eplTol",
+        "name": "p_eplTol",
+        "units": "cm H2O"
+    },
+    "p_et": {
+        "alarms": {},
+        "description": "Expiration time setting",
+        "desired_value": 2000,
+        "id": "p_et",
+        "name": "p_et",
+        "units": "ms"
+    },
+    "p_iphTol": {
+        "alarms": {},
+        "description": "Excursion from p_eph required to trigger start of expiration if P > p_iph + p_iphTol",
+        "desired_value": 0.5,
+        "id": "p_iphTol",
+        "name": "p_iphTol",
+        "units": "cm H2O"
+    },
+    "p_it": {
+        "alarms": {},
+        "description": "Inspiration time setting",
+        "desired_value": 1000,
+        "id": "p_it",
+        "name": "p_it",
+        "units": "ms"
+    },
+    "p_trigEnabled": {
+        "alarms": {},
+        "description": "Flag that determines whether or not the auto-breathing function is enabled",
+        "desired_value": 1,
+        "id": "p_trigEnabled",
+        "name": "p_trigEnabled",
+        "units": "bool"
+    },
+    "time": {
+        "alarms": {},
+        "description": "Time stamp associated with data",
+        "id": "time",
+        "name": "time",
+        "units": "ms"
+    },
+    "v_batv": {
+        "alarms": {},
+        "description": "Measured battery voltage. Over 13v for powered, over 12v for charge remaining",
+        "id": "v_batv",
+        "name": "Battery",
+        "units": "v"
+    },
+    "v_bpm": {
+        "alarms": {},
+        "description": "BPM for last breath",
+        "id": "v_bpm",
+        "name": "v_bpm",
+        "units": "bpm"
+    },
+    "v_epl": {
+        "alarms": {},
+        "description": "Lowest pressure during expiration phase of last breath",
+        "id": "v_epl",
+        "name": "v_epl",
+        "units": "cm H2O"
+    },
+    "v_epp": {
+        "alarms": {},
+        "description": "Highest pressure during expiration phase of last breath",
+        "id": "v_epp",
+        "name": "v_epp",
+        "units": "cm H2O"
+    },
+    "v_et": {
+        "alarms": {},
+        "description": "Expiration time during last breath",
+        "id": "v_et",
+        "name": "v_et",
+        "units": "ms"
+    },
+    "v_ie": {
+        "alarms": {},
+        "description": "set to 0 when between phases, 1 for inspiration phase, -1 for expiration phase",
+        "id": "v_ie",
+        "name": "Breathing Phase",
+        "units": "v"
+    },
+    "v_ipl": {
+        "alarms": {},
+        "description": "Lowest pressure during inspiration phase of last breath",
+        "id": "v_ipl",
+        "name": "v_ipl",
+        "units": "cm H2O"
+    },
+    "v_ipp": {
+        "alarms": {},
+        "description": "Highest pressure during inspiration phase of last breath",
+        "id": "v_ipp",
+        "name": "v_ipp",
+        "units": "cm H2O"
+    },
+    "v_it": {
+        "alarms": {},
+        "description": "Inspiration time during last breath",
+        "id": "v_it",
+        "name": "v_it",
+        "units": "ms"
+    },
+    "v_mv": {
+        "alarms": {
+            "v_mvh": {
+                "boundaries": {
+                    "UpperBound": 26.712418300653596,
+                    "UpperBoundCode": 42
+                },
+                "description": "volume per minute upper bound",
+                "id": "v_mvh",
+                "name": "v_mvh",
+                "units": "v/m"
+            },
+            "v_mvl": {
+                "boundaries": {
+                    "LowerBound": 15.784313725490195,
+                    "LowerBoundCode": 43
+                },
+                "description": "volume per minute lower bound",
+                "id": "v_mvl",
+                "name": "v_mvl",
+                "units": "v/m"
+            }
+        },
+        "description": "Volume per minute averaged over recent breaths",
+        "id": "v_mv",
+        "name": "v_mv",
+        "units": "v/m"
+    },
+    "v_o2": {
+        "alarms": {},
+        "description": "Measured instantaneous oxygen volume fraction",
+        "id": "v_o2",
+        "name": "Oxygen",
+        "units": "%"
+    },
+    "v_p": {
+        "alarms": {},
+        "description": "Current instantaneous pressure",
+        "id": "v_p",
+        "name": "v_p",
+        "units": "cm H2O"
+    },
+    "v_pl": {
+        "alarms": {
+            "p_eph": {
+                "boundaries": {
+                    "UpperBound": 20,
+                    "UpperBoundCode": 42
+                },
+                "description": "The expiration pressure upper bound.",
+                "id": "p_eph",
+                "name": "p_eph",
+                "units": "cm H2O"
+            },
+            "p_epl": {
+                "boundaries": {
+                    "LowerBound": 10,
+                    "LowerBoundCode": 43
+                },
+                "description": "The expiration pressure lower bound",
+                "id": "p_epl",
+                "name": "p_epl",
+                "units": "cm H2O"
+            }
+        },
+        "description": "Lowest pressure during any phase of last breath",
+        "id": "v_pl",
+        "name": "v_pl",
+        "units": "cm H2O"
+    },
+    "v_pp": {
+        "alarms": {
+            "p_iph": {
+                "boundaries": {
+                    "UpperBound": 45,
+                    "UpperBoundCode": 42
+                },
+                "description": "The inspiration pressure upper bound",
+                "id": "p_iph",
+                "name": "p_iph",
+                "units": "cm H2O"
+            },
+            "p_ipl": {
+                "boundaries": {
+                    "LowerBound": 10,
+                    "LowerBoundCode": 43
+                },
+                "description": "The inspiration pressure lower bound",
+                "id": "p_ipl",
+                "name": "p_ipl",
+                "units": "cm H2O"
+            }
+        },
+        "description": "Highest pressure during any phase of last breath",
+        "id": "v_pp",
+        "name": "v_pp",
+        "units": "cm H2O"
+    },
+    "v_q": {
+        "alarms": {},
+        "description": "Current instantaneous flow to patient",
+        "id": "v_q",
+        "name": "v_q",
+        "units": "L/min"
+    },
+    "v_v": {
+        "alarms": {
+            "v_vh": {
+                "boundaries": {
+                    "UpperBound": 1000.0,
+                    "UpperBoundCode": 42
+                },
+                "description": "Inspiration volume upper bound",
+                "id": "v_vh",
+                "name": "v_mvh",
+                "units": "v/m"
+            },
+            "v_vl": {
+                "boundaries": {
+                    "LowerBound": 503.26797385620915,
+                    "LowerBoundCode": 43
+                },
+                "description": "Inspiration volume lower bound",
+                "id": "v_vl",
+                "name": "v_vl",
+                "units": "v/m"
+            }
+        },
+        "description": "Inspiration volume of last breath",
+        "id": "v_v",
+        "name": "v_v",
+        "units": "L"
+    },
+    "v_venturiv": {
+        "alarms": {},
+        "description": "Measured venturi voltage",
+        "id": "v_venturiv",
+        "name": "Venturi",
+        "units": "v"
+    }
+}
